@@ -22,5 +22,6 @@ public class CountDownLatchDemo {
         }
         lock.await();
         System.out.println(Thread.currentThread().getName()+"\t 秦统一");
+        System.out.println(CountryEnum.ONE.getCountry());
     }
 }

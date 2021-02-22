@@ -33,7 +33,7 @@ class MyCache{
         try{
             System.out.println(Thread.currentThread().getName()+"\t 正在获取:"+key);
             Object result = map.get(key);
-            try { TimeUnit.MILLISECONDS.sleep(300); } catch (InterruptedException e) { e.printStackTrace(); }
+            //try { TimeUnit.MILLISECONDS.sleep(300); } catch (InterruptedException e) { e.printStackTrace(); }
             System.out.println(Thread.currentThread().getName()+"\t 获取成功:"+result);
         }catch(Exception e){
             e.printStackTrace();
